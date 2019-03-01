@@ -31,7 +31,7 @@ CKEDITOR.plugins.add( 'unsubscribe', {
                 let selectedText = sel.getSelectedText();
                 if(selectedText){
                     let newElement = editor.document.createElement( 'a' );
-                    newElement.setAttributes({href: '[UNSUBSCRIBE_URL]'});
+                    newElement.setAttributes({href: '[DIRECT_UNSUBSCRIBE_URL]'});
                     newElement.setText(selectedText);
                     editor.insertElement(newElement);
                 }else{
